@@ -103,7 +103,7 @@
                         </div>
                         @if (Auth::user()->hasRole('admin'))
                             <div class="col-3 addBtnClass">
-                                <a href="/orders/create" style="float:right;margin-right:15px;"
+                                <a href="{{route('orders.create')}}" style="float:right;margin-right:15px;"
                                     class="btn btn-primary waves-effect waves-float waves-light">Add New Batches</a>
 
                             </div>
