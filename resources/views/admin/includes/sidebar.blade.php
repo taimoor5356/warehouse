@@ -9,7 +9,6 @@
                         <span class="brand-text" style="margin-top: 0px; color: #4B4B4B; font-size: 22px; font-weight: bold">
                             Warehouse
                         </span>
-                        {{-- <h6 style="margin: -14px 60px; color: black; font-weight: bold; ">Warehouse</span> --}}
                     </div>
                 </a>
             </li>
