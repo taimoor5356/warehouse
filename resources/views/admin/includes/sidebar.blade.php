@@ -6,7 +6,7 @@
                     <span class="brand-logo">
                     </span>
                     <div class="">
-                        <span class="brand-text" style="margin-top: 0px; color: rgb(255, 135, 55); font-size: 22px; font-weight: bold">
+                        <span class="brand-text" style="margin-top: 0px; color: #4B4B4B; font-size: 22px; font-weight: bold">
                             Warehouse
                         </span>
                         {{-- <h6 style="margin: -14px 60px; color: black; font-weight: bold; ">Warehouse</span> --}}

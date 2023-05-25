@@ -1176,7 +1176,7 @@ select:-webkit-autofill {
     min-height: 1px; } }
 
 .card-congratulations {
-  background: linear-gradient(118deg, #4B4B4B, rgba(115, 103, 240, 0.7));
+  background: #4B4B4B;
   color: #fff; }
 
 .card-congratulations .congratulations-img-left {
