@@ -540,7 +540,9 @@ table.sku-table tfoot td {
                         $('#charges-error').html(result.message);
                     }
                 });
-                $.get("{{route('customer-brand', ['id' => "+id+"])}}", function(result) {
+                var getCustomerBrandUrl = "{{route('customer-brand', ['id' => ':id'])}}";
+                getCustomerBrandUrl = getCustomerBrandUrl.replace(':id', id);
+                $.get(getCustomerBrandUrl, function(result) {
                     if(result.status == "success") {
                         var options = "<option value=''>Select Brand</option>";
                         result.data.forEach(element => {
