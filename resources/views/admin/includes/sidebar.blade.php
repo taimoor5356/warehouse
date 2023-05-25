@@ -2,7 +2,7 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item me-auto"><a class="navbar-brand" href="/">
+            <li class="nav-item me-auto"><a class="navbar-brand" href="{{route('dashboard')}}">
                     <span class="brand-logo">
                     </span>
                     <div class="">
