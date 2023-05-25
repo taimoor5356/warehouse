@@ -481,7 +481,7 @@ table.sku-table tfoot td {
             if(id=="") {
                 $('#brand').html('<option value="">Select Brand</option>');
             } else {
-                $.get('/customer/'+id+'/service-charges', function(result) {
+                $.get("{{route('customer-service-charges', ['id' => "+id+"])}}", function(result) {
                     if(result.status == "success") {
                         $('#discounted_postage_charges_status').val(result.data.discounted_default_postage_charges);
                         $('#mailer_cost').val(result.data.mailer);
