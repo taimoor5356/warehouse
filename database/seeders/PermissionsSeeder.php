@@ -1,0 +1,177 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\AdminModels\Permissions;
+use Spatie\Permission\Models\Permission;
+class PermissionsSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        // Permissions::query()->truncate();
+        // Permissions::create(['name' => 'category_create', 'slug'=>'Category Create','description'=>'Category Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'category_update', 'slug'=>'Category Update','description'=>'Category Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'category_delete', 'slug'=>'Category Delete','description'=>'Category delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'category_view', 'slug'=>'Category View','description'=>'Category listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'customer_create', 'slug'=>'Customer Create','description'=>'Customer Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'customer_update', 'slug'=>'Customer Update','description'=>'Customer Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'customer_delete', 'slug'=>'Customer Delete','description'=>'Customer delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'customer_view', 'slug'=>'Customer View','description'=>'Customer listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_create', 'slug'=>'Inventory Create','description'=>'Inventory Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_update', 'slug'=>'Inventory Update','description'=>'Inventory Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_delete', 'slug'=>'Inventory Delete','description'=>'Inventory delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_view', 'slug'=>'Inventory View','description'=>'Inventory listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'forecast_view', 'slug'=>'Forecast View','description'=>'View Inventory Stock Forecast', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_trash_view', 'slug'=>'Inventory Trash View','description'=>'Inventory Trash listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_restore', 'slug'=>'Inventory Restore','description'=>'Inventory Restore', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_history', 'slug'=>'Inventory History','description'=>'Inventory History', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_upcoming', 'slug'=>'Inventory Upcoming','description'=>'Upcoming Inventory', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'inventory_otw', 'slug'=>'Inventory Otw','description'=>'OTW Inventory', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'upcoming_inventory_view', 'slug'=>'Upcoming Inventory View','description'=>'Upcoming Inventory View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'upcoming_inventory_create', 'slug'=>'Upcoming Inventory Create','description'=>'Upcoming Inventory Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'upcoming_inventory_move_otw', 'slug'=>'Upcoming Inventory Move Otw','description'=>'Upcoming Inventory to OTW', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'upcoming_inventory_update', 'slug'=>'Upcoming Inventory Update','description'=>'Upcoming Inventory Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'upcoming_inventory_delete', 'slug'=>'Upcoming Inventory Delete','description'=>'Delete Upcoming Inventory', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'otw_inventory_view', 'slug'=>'Otw Inventory View','description'=>'OTW Inventory View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'otw_inventory_create', 'slug'=>'Otw Inventory Create','description'=>'OTW Inventory Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'otw_inventory_move_stock', 'slug'=>'Otw Inventory Move Stock','description'=>'OTW Inventory to Stock', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'otw_inventory_update', 'slug'=>'Otw Inventory Update','description'=>'OTW Inventory Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'otw_inventory_delete', 'slug'=>'Otw Inventory Delete','description'=>'Delete OTW Inventory', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'invoices_view', 'slug'=>'Invoices View','description'=>'Invoices View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'order_view', 'slug'=>'Order View','description'=>'Orders View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'order_create', 'slug'=>'Order Create','description'=>'Order Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'order_update', 'slug'=>'Order Update','description'=>'Order Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'order_delete', 'slug'=>'Order Delete','description'=>'Order Delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'user_view', 'slug'=>'User View','description'=>'Users View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'user_create', 'slug'=>'User Create','description'=>'Users Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'user_update', 'slug'=>'User Update','description'=>'Users Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'user_delete', 'slug'=>'User Delete','description'=>'Users Delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_create', 'slug'=>'Labels Create','description'=>'Label Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_update', 'slug'=>'Labels Update','description'=>'Label Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_delete', 'slug'=>'Labels Delete','description'=>'Label delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_view', 'slug'=>'Labels View','description'=>'Label listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_restore', 'slug'=>'Labels Restore','description'=>'Label Restore', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_trash_view', 'slug'=>'Labels Trash View','description'=>'Label Trash View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'labels_history', 'slug'=>'Labels History','description'=>'Label History View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'product_create', 'slug'=>'Product Create','description'=>'Product Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'product_update', 'slug'=>'Product Update','description'=>'Product Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'product_delete', 'slug'=>'Product Delete','description'=>'Product delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'product_view', 'slug'=>'Product View','description'=>'Product listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'userrole_create', 'slug'=>'Userrole Create','description'=>'User Role Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'userrole_update', 'slug'=>'Userrole Update','description'=>'User Role Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'userrole_delete', 'slug'=>'Userrole Delete','description'=>'User Role delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'userrole_view', 'slug'=>'Userrole View','description'=>'User Role listing', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'sku_view', 'slug'=>'Sku View','description'=>'View SKU', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'sku_create', 'slug'=>'Sku Create','description'=>'Create SKU', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'sku_update', 'slug'=>'Sku Update','description'=>'Update SKU', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'sku_delete', 'slug'=>'Sku Delete','description'=>'Delete SKU', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'report_view', 'slug'=>'Report View','description'=>'View Reports', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'pin_code', 'slug'=>'Pin Code','description'=>'Pin Code', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'setting_update', 'slug'=>'Setting Update','description'=>'Setting Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'return_order_view', 'slug'=>'Return Order View','description'=>'Return Order View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'return_order_create', 'slug'=>'Return Order Create','description'=>'Return Order Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'return_order_update', 'slug'=>'Return Order Update','description'=>'Return Order Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'return_order_delete', 'slug'=>'Return Order Delete','description'=>'Return Order Delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'file_storage_view', 'slug'=>'File View','description'=>'File View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'file_storage_create', 'slug'=>'File Create','description'=>'File Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'file_storage_update', 'slug'=>'File Update','description'=>'File Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'file_storage_delete', 'slug'=>'File Delete','description'=>'File Delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'unit_view', 'slug'=>'Unit View','description'=>'Unit View', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'unit_create', 'slug'=>'Unit Create','description'=>'Unit Create', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'unit_update', 'slug'=>'Unit Update','description'=>'Unit Update', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'unit_delete', 'slug'=>'Unit Delete','description'=>'Unit Delete', 'guard_name' => 'web']);
+        // Permissions::create(['name' => 'all_orders_view', 'slug' => 'All Orders View', 'description' => 'All Orders View', 'guard_name' => 'web']);
+
+        Permission::create(['name' => 'category_create', 'slug'=>'Category Create','description'=>'Category Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'category_update', 'slug'=>'Category Update','description'=>'Category Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'category_delete', 'slug'=>'Category Delete','description'=>'Category delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'category_view', 'slug'=>'Category View','description'=>'Category listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'customer_create', 'slug'=>'Customer Create','description'=>'Customer Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'customer_update', 'slug'=>'Customer Update','description'=>'Customer Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'customer_delete', 'slug'=>'Customer Delete','description'=>'Customer delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'customer_view', 'slug'=>'Customer View','description'=>'Customer listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_create', 'slug'=>'Inventory Create','description'=>'Inventory Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_update', 'slug'=>'Inventory Update','description'=>'Inventory Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_delete', 'slug'=>'Inventory Delete','description'=>'Inventory delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_view', 'slug'=>'Inventory View','description'=>'Inventory listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'forecast_view', 'slug'=>'Forecast View','description'=>'View Inventory Stock Forecast', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_trash_view', 'slug'=>'Inventory Trash View','description'=>'Inventory Trash listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_restore', 'slug'=>'Inventory Restore','description'=>'Inventory Restore', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_history', 'slug'=>'Inventory History','description'=>'Inventory History', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_upcoming', 'slug'=>'Inventory Upcoming','description'=>'Upcoming Inventory', 'guard_name' => 'web']);
+        Permission::create(['name' => 'inventory_otw', 'slug'=>'Inventory Otw','description'=>'OTW Inventory', 'guard_name' => 'web']);
+        Permission::create(['name' => 'upcoming_inventory_view', 'slug'=>'Upcoming Inventory View','description'=>'Upcoming Inventory View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'upcoming_inventory_create', 'slug'=>'Upcoming Inventory Create','description'=>'Upcoming Inventory Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'upcoming_inventory_move_otw', 'slug'=>'Upcoming Inventory Move Otw','description'=>'Upcoming Inventory to OTW', 'guard_name' => 'web']);
+        Permission::create(['name' => 'upcoming_inventory_update', 'slug'=>'Upcoming Inventory Update','description'=>'Upcoming Inventory Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'upcoming_inventory_delete', 'slug'=>'Upcoming Inventory Delete','description'=>'Delete Upcoming Inventory', 'guard_name' => 'web']);
+        Permission::create(['name' => 'otw_inventory_view', 'slug'=>'Otw Inventory View','description'=>'OTW Inventory View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'otw_inventory_create', 'slug'=>'Otw Inventory Create','description'=>'OTW Inventory Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'otw_inventory_move_stock', 'slug'=>'Otw Inventory Move Stock','description'=>'OTW Inventory to Stock', 'guard_name' => 'web']);
+        Permission::create(['name' => 'otw_inventory_update', 'slug'=>'Otw Inventory Update','description'=>'OTW Inventory Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'otw_inventory_delete', 'slug'=>'Otw Inventory Delete','description'=>'Delete OTW Inventory', 'guard_name' => 'web']);
+        Permission::create(['name' => 'invoices_view', 'slug'=>'Invoices View','description'=>'Invoices View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'order_view', 'slug'=>'Order View','description'=>'Orders View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'order_create', 'slug'=>'Order Create','description'=>'Order Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'order_update', 'slug'=>'Order Update','description'=>'Order Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'order_delete', 'slug'=>'Order Delete','description'=>'Order Delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'user_view', 'slug'=>'User View','description'=>'Users View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'user_create', 'slug'=>'User Create','description'=>'Users Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'user_update', 'slug'=>'User Update','description'=>'Users Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'user_delete', 'slug'=>'User Delete','description'=>'Users Delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_create', 'slug'=>'Labels Create','description'=>'Label Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_update', 'slug'=>'Labels Update','description'=>'Label Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_delete', 'slug'=>'Labels Delete','description'=>'Label delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_view', 'slug'=>'Labels View','description'=>'Label listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_restore', 'slug'=>'Labels Restore','description'=>'Label Restore', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_trash_view', 'slug'=>'Labels Trash View','description'=>'Label Trash View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'labels_history', 'slug'=>'Labels History','description'=>'Label History View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'product_create', 'slug'=>'Product Create','description'=>'Product Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'product_update', 'slug'=>'Product Update','description'=>'Product Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'product_delete', 'slug'=>'Product Delete','description'=>'Product delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'product_view', 'slug'=>'Product View','description'=>'Product listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'userrole_create', 'slug'=>'Userrole Create','description'=>'User Role Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'userrole_update', 'slug'=>'Userrole Update','description'=>'User Role Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'userrole_delete', 'slug'=>'Userrole Delete','description'=>'User Role delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'userrole_view', 'slug'=>'Userrole View','description'=>'User Role listing', 'guard_name' => 'web']);
+        Permission::create(['name' => 'sku_view', 'slug'=>'Sku View','description'=>'View SKU', 'guard_name' => 'web']);
+        Permission::create(['name' => 'sku_create', 'slug'=>'Sku Create','description'=>'Create SKU', 'guard_name' => 'web']);
+        Permission::create(['name' => 'sku_update', 'slug'=>'Sku Update','description'=>'Update SKU', 'guard_name' => 'web']);
+        Permission::create(['name' => 'sku_delete', 'slug'=>'Sku Delete','description'=>'Delete SKU', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_view', 'slug'=>'Report View','description'=>'View Reports', 'guard_name' => 'web']);
+        Permission::create(['name' => 'pin_code', 'slug'=>'Pin Code','description'=>'Pin Code', 'guard_name' => 'web']);
+        Permission::create(['name' => 'setting_update', 'slug'=>'Setting Update','description'=>'Setting Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'return_order_view', 'slug'=>'Return Order View','description'=>'Return Order View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'return_order_create', 'slug'=>'Return Order Create','description'=>'Return Order Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'return_order_update', 'slug'=>'Return Order Update','description'=>'Return Order Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'return_order_delete', 'slug'=>'Return Order Delete','description'=>'Return Order Delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'file_storage_view', 'slug'=>'File View','description'=>'File View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'file_storage_create', 'slug'=>'File Create','description'=>'File Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'file_storage_update', 'slug'=>'File Update','description'=>'File Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'file_storage_delete', 'slug'=>'File Delete','description'=>'File Delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'unit_view', 'slug'=>'Unit View','description'=>'Unit View', 'guard_name' => 'web']);
+        Permission::create(['name' => 'unit_create', 'slug'=>'Unit Create','description'=>'Unit Create', 'guard_name' => 'web']);
+        Permission::create(['name' => 'unit_update', 'slug'=>'Unit Update','description'=>'Unit Update', 'guard_name' => 'web']);
+        Permission::create(['name' => 'unit_delete', 'slug'=>'Unit Delete','description'=>'Unit Delete', 'guard_name' => 'web']);
+        Permission::create(['name' => 'return_order_view_all', 'slug' => 'Return Order View All', 'description' => 'Return Order View All', 'guard_name' => 'web']);
+        
+        Permission::create(['name' => 'report_sales_view', 'slug'=>'Sales Report','description'=>'Sales Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_profit_view', 'slug'=>'Profit Report','description'=>'Profit Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_inventory_forecast_view', 'slug'=>'Inventory Forecast Report','description'=>'Inventory Forecast Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_inventory_history_view', 'slug'=>'Inventory History Report','description'=>'Inventory History Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_brands_view', 'slug'=>'Brands Report','description'=>'Brands Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_labels_forecast_view', 'slug'=>'Labels Forecast','description'=>'Labels Forecast', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_all_products_view', 'slug'=>'All Product Report','description'=>'All Product Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_products_in_out_view', 'slug'=>'Product In/Out Report','description'=>'Product In/Out Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_products_brand_view', 'slug'=>'Products Brand Report','description'=>'Products Brand Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_labels_view', 'slug'=>'Labels Report','description'=>'Labels Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_postage_view', 'slug'=>'Postage Report','description'=>'Postage Report', 'guard_name' => 'web']);
+        Permission::create(['name' => 'report_returned_view', 'slug' => 'Returned Report', 'description' => 'Returned Report', 'guard_name' => 'web']);
+    }
+}
