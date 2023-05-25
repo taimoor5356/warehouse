@@ -9,10 +9,9 @@
                 <div class="card-body">
                     <a href="#" class="brand-logo">
                         <div class="">
-                            <span class="brand-text" style="margin-top: 0px; color: rgb(255, 135, 55); font-size: 25px; font-weight: bold">
+                            <span class="brand-text" style="margin-top: 0px; color: #4B4B4B; font-size: 25px; font-weight: bold">
                                 Warehouse
                             </span>
-                            {{-- <h6 style="margin: -14px 55px; color: black; font-weight: bold; ">Warehouse</span> --}}
                         </div>
                     </a>
 
