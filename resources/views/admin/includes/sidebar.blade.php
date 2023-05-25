@@ -21,7 +21,7 @@
             <!-- Dashboard -->
             <li
                 class="nav-item @if (\Request::route()->getName() == 'dashboard') active @elseif(\Request::route()->getName() == 'home.dashboard') active @endif">
-                <a class="d-flex align-items-center" href="/"><i data-feather="grid"></i><span
+                <a class="d-flex align-items-center" href="{{url('dashboard')}}"><i data-feather="grid"></i><span
                         class="menu-title text-truncate" data-i18n="Invoice">Dashboard</span></a>
             </li>
             <!-- Batches -->
