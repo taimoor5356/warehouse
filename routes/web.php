@@ -228,7 +228,7 @@ Route::group(['middleware' => ['auth']], function() {
         ProductLabelOrderJob::dispatch();
     });
 
-    Route::get('/', [
+    Route::get('/dashboard', [
         'uses' => 'Admin\HomeController@index',
         'as' => 'dashboard'
     ]);
